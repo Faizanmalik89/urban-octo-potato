@@ -154,3 +154,20 @@ footer p {
     margin: 40px 0;
     text-align: center;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-posts .post {
+        width: 80%;
+    }
+
+    aside {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
