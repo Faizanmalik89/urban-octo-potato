@@ -1,14 +1,13 @@
-/* Resetting the default styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and font setup */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     line-height: 1.6;
     color: #333;
 }
@@ -18,30 +17,24 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styles */
-header {
-    background-color: #2c3e50;
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
-}
-
-header .logo h1 {
-    font-size: 2.5rem;
+    padding: 15px;
     text-align: center;
-    font-weight: bold;
 }
 
-header nav ul {
+.navbar ul {
     list-style-type: none;
-    text-align: center;
 }
 
-header nav ul li {
+.navbar ul li {
     display: inline;
     margin: 0 20px;
 }
 
-header nav ul li a {
+.navbar ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -55,119 +48,114 @@ header nav ul li a {
     padding: 60px 0;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 /* Blog Section */
-.blog-posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 30px;
+.blogs {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
 }
 
-.blog-posts .post {
-    background-color: #fff;
-    padding: 20px;
-    width: 48%;
+.blogs h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.blog-posts .post h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.blog-posts .post p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-.blog-posts .post a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-/* Sidebar Section */
-aside {
-    background-color: #fff;
-    padding: 20px;
-    width: 25%;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-aside h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-aside ul {
+.blog-list {
     list-style-type: none;
 }
 
-aside ul li {
-    margin-bottom: 12px;
+.blog-list li {
+    margin-bottom: 10px;
 }
 
-aside ul li a {
-    color: #333;
+.blog-list a {
+    color: #2980b9;
+    font-size: 1.3rem;
     text-decoration: none;
 }
 
-.social li a {
+/* Blog Content */
+.blog-content {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    display: none;
+}
+
+.blog-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.blog-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    font-size: 1.2rem;
+    color: #2980b9;
     text-decoration: none;
-    color: #3498db;
 }
 
-.social li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Section */
+/* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-/* Adsense Section */
-.adsense {
-    margin: 40px 0;
-    text-align: center;
+    padding: 15px 0;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .blog-posts {
-        flex-direction: column;
-        align-items: center;
+    .blog-list a {
+        font-size: 1.1rem;
     }
 
-    .blog-posts .post {
-        width: 80%;
+    .about p {
+        width: 90%;
     }
 
-    aside {
-        width: 80%;
-        margin-top: 20px;
+    .blog-content {
+        padding: 20px;
     }
 }
