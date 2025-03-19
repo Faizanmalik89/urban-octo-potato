@@ -7,20 +7,20 @@
     <meta name="description" content="Explore insightful blogs on a variety of topics including future life, cricket, addiction, and more.">
     <meta name="keywords" content="blog, future life, Pakistan, drug addiction, cricket, humans">
     <meta name="author" content="Faizan Malik">
-    <title>Axha Insights</title>
+    <title>Home - Axha Insights</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#x22EE;</div>
+        <div id="menu" class="menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blogs.html">Blogs</a>
+        </div>
+    </div>
 
     <!-- Home Section -->
     <section id="home" class="hero">
@@ -30,79 +30,14 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blogs" class="blogs">
-        <div class="container">
-            <h2>Our Latest Blogs</h2>
-            <ul class="blog-list">
-                <li><a href="#blog1">Future Life: A Glimpse into Tomorrow</a></li>
-                <li><a href="#blog2">Pakistan: A Country of Diverse Heritage</a></li>
-                <li><a href="#blog3">The Silent Killer: Drug Addiction</a></li>
-                <li><a href="#blog4">Cricket: More Than Just a Game</a></li>
-                <li><a href="#blog5">Humans: The Pinnacle of Evolution</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Blog Content -->
-    <section id="blog1" class="blog-content">
-        <div class="container">
-            <h3>Future Life: A Glimpse into Tomorrow</h3>
-            <p>The future holds immense possibilities. With technology advancing rapidly, we are on the brink of a revolution that could change every aspect of our lives, from AI-powered robots to life on Mars...</p>
-            <p>As innovations continue to unfold, will we be ready for the challenges and opportunities that lie ahead?</p>
-        </div>
-    </section>
-
-    <section id="blog2" class="blog-content">
-        <div class="container">
-            <h3>Pakistan: A Country of Diverse Heritage</h3>
-            <p>Pakistan is a land of rich cultural heritage, diversity, and history. From the bustling streets of Karachi to the serene valleys of the north, Pakistan offers a unique blend of ancient traditions and modern progress...</p>
-        </div>
-    </section>
-
-    <section id="blog3" class="blog-content">
-        <div class="container">
-            <h3>The Silent Killer: Drug Addiction</h3>
-            <p>Drug addiction is a growing concern across the world. It affects not only individuals but also families and communities, causing lifelong damage. The consequences of drug addiction are far-reaching...</p>
-        </div>
-    </section>
-
-    <section id="blog4" class="blog-content">
-        <div class="container">
-            <h3>Cricket: More Than Just a Game</h3>
-            <p>Cricket is more than just a sport; it’s a passion, a religion for millions of fans worldwide. The thrill of watching a match is unparalleled, as it brings people together and creates a sense of national pride...</p>
-        </div>
-    </section>
-
-    <section id="blog5" class="blog-content">
-        <div class="container">
-            <h3>Humans: The Pinnacle of Evolution</h3>
-            <p>Humans are the most intelligent and advanced species on Earth. Our ability to reason, create, and change the world around us is unparalleled. Yet, we continue to face challenges that test our humanity...</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Axha Insights</h2>
-            <p>Axha Insights is a blog platform where we explore thought-provoking topics including the future of life, societal issues, sports, and human nature. Our aim is to inspire, inform, and spark discussions on crucial topics that impact our world. With a team of passionate writers, we bring you insightful content that challenges the way we think and view the world around us. Stay tuned for regular updates!</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:faizanmaliks888@gmail.com">faizanmaliks888@gmail.com</a></p>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Axha Insights. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
