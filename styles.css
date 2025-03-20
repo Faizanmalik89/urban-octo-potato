@@ -1,87 +1,49 @@
-/* Basic reset */
-* {
+body {
+    font-family: 'Noto Nastaliq Urdu', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-align: center;
+    background-color: #f7f1e3;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+header {
+    background-color: #3e2723;
+    color: white;
+    padding: 20px;
 }
 
-/* Navigation bar */
-.navbar {
-    background-color: #333;
-    padding: 10px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: #5d4037;
+    overflow: hidden;
 }
 
-.menu-icon {
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
+nav ul li {
+    display: inline;
+    padding: 15px;
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.menu a {
+nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-size: 18px;
 }
 
-.menu a:hover {
-    color: #f4f4f4;
-}
-
-/* For small screens, toggle the menu */
-@media screen and (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-    }
-
-    .menu.open {
-        display: flex;
-    }
-
-    .menu a {
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        border-top: 1px solid #fff;
-    }
-}
-
-/* Hero section */
-.hero {
-    background-color: #333;
+.banner {
+    background: url('https://source.unsplash.com/1600x900/?coffee') no-repeat center center/cover;
     color: white;
-    padding: 60px 0;
-    text-align: center;
+    padding: 100px;
 }
 
-.hero h1 {
-    font-size: 3em;
+.about {
+    margin: 50px;
+    font-size: 20px;
 }
 
-.hero p {
-    font-size: 1.5em;
-}
-
-/* Footer */
 footer {
-    background-color: #333;
+    background-color: #3e2723;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+    padding: 10px;
+    margin-top: 20px;
 }
