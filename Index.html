@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>کافی شوقین ویب سائیٹ</title>
+    <title>Blog & Video Platform</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>کافی کا شوق</h1>
-        <p>ایک منفرد تجربہ جو آپ کی حسوں کو جگا دے</p>
-    </header>
-
+    <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Register</a></li>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login/Sign Up</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Ads & Videos</a></li>
         </ul>
     </nav>
 
-    <section class="banner">
-        <h2>کافی کے سحر میں کھو جائیں</h2>
-    </section>
+    <!-- Home Page -->
+    <header>
+        <h1>Welcome to Our Blog & Video Platform</h1>
+        <p>This platform provides high-quality blogs and exclusive videos...</p>
+    </header>
 
-    <section class="about">
-        <h2>ہمارے بارے میں</h2>
-        <p>یہ ویب سائٹ ان لوگوں کے لیے ہے جو کافی کے شوقین ہیں۔ ہم آپ کو بہترین کافی کے بارے میں معلومات فراہم کرتے ہیں۔</p>
+    <section class="content">
+        <h2>About Our Website</h2>
+        <p>This website is designed for people who love to read informative blogs and watch engaging videos...</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 کافی شوقین | تمام حقوق محفوظ ہیں</p>
+        <p>&copy; 2025 Blog & Video Platform | All Rights Reserved</p>
     </footer>
 </body>
 </html>
